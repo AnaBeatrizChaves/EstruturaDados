@@ -22,10 +22,12 @@ int main() {
 
     system("cls");
     
-    while(arquivo != EOF) {
-        fscanf(arquivo, "%s %d %f", Produto, &Quantidade, &Preco);
+    while(fscanf(arquivo, "%s %d %f", Produto, &Quantidade, &Preco) != EOF){
         printf("%s\t%d\t%f\n", Produto, Quantidade, Preco);
+        Total = Total + Quantidade * Preco;
     }
+
+    printf("Preco: R$ %f", Total);
 
     fclose(arquivo);
     return 0;
