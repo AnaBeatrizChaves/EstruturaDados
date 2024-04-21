@@ -4,15 +4,15 @@
 #include "main.h"
 #include "funcoes.c"
 
-#define ERRO 1
-
 int main() {
 
     FILE *arquivo;
-    struct Aluno X[100];
     int i;
 
     arquivo = fopen("DadosEntrada.csv", "r");
+
+    int linhas = contarLinhas(arquivo);
+    struct Aluno X[linhas];
 
     if(arquivo == NULL) {
         printf("Erro ao abrir o arquivo!");
