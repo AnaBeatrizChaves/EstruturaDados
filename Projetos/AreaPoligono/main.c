@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
-#include "funcoes.c"
+#include "funcao.c"
 
 int main() {
 

@@ -1,3 +1,4 @@
+//Essa função determinará a área do triângulo conforme os dados do arquivo TXT passados como parâmetros.
 float areaTriangulo(struct pontos vertices[], int tamanho) {
     float area = 0;
 
