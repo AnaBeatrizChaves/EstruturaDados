@@ -1,8 +1,8 @@
-struct pontos{
-    float x;
-    float y;
-};
+typedef struct {
+    float X;
+    float Y;
+} Pontos;
 
 #define ERRO 1
 
-float areaTriangulo(struct pontos vertices[], int tamanho);
+float areaTriangulo(Pontos vertices[], int tamanho);
