@@ -18,6 +18,7 @@ float areaTriangulo(Pontos vertices[], int tamanho) {
         det = det - (M[2][1] * M[1][2] * M[0][0]);
         det = det - (M[2][2] * M[1][0] * M[0][1]);
 
+/*
         if (det == 0) {
             printf("\n--------------------------------------------");
             printf("\n----------------- ATENCAO ------------------\n");
@@ -28,7 +29,7 @@ float areaTriangulo(Pontos vertices[], int tamanho) {
             printf("\n--------------------------------------------\n");
             exit(0);
         }
-
+*/
         area += det / 2;
     }
 
