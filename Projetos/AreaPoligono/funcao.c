@@ -18,18 +18,18 @@ float areaTriangulo(Pontos vertices[], int tamanho) {
         det = det - (M[2][1] * M[1][2] * M[0][0]);
         det = det - (M[2][2] * M[1][0] * M[0][1]);
 
-/*
+
         if (det == 0) {
             printf("\n--------------------------------------------");
             printf("\n----------------- ATENCAO ------------------\n");
-            printf("\nOs pontos dos vertices presente no arquivo,\nnao formam um triangulo!\n");
+            printf("\nOs pontos dos vertices do poligono informado\nno arquivo, nao formam triangulos!\n");
             printf("Tente novamente...\n");
             printf("\n-------------------------------------------\n");
             printf("             Programa Encerrado!!             ");
             printf("\n--------------------------------------------\n");
             exit(0);
         }
-*/
+
         area += det / 2;
     }
 

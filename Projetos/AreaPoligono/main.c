@@ -19,8 +19,9 @@ int main() {
 
     fscanf(arquivo, "%d", &ponto);
     Pontos vertices[ponto];
-    
-    for (int i = 0; i < ponto; i++)fscanf(arquivo, "%f %f", &vertices[i].X, &vertices[i].Y);
+
+    //linha utilizada para fazer a leitura dos pontos de vertices presentes no arquivo .TXT
+    for (int i = 0; i < ponto; i++) fscanf(arquivo, "%f %f", &vertices[i].X, &vertices[i].Y);
 
     float area = areaTriangulo(vertices, ponto);
 
@@ -35,9 +36,10 @@ int main() {
     printf("- Vertices do Poligono:\n");
     printf("  X   |   Y\n");
     for (int i = 0; i < ponto; i++) {
+        //linha utilizada para printar na tela os pontos de vertices presentes no arquivo .TXT
         printf("%.2f    %.2f\n", vertices[i].X, vertices[i].Y);
     }
-    printf("- Area do poligono = %.0f", area);
+    printf("- Area do poligono = %.2f", area);
     printf("\n-------------------------------------------\n");
     fclose(arquivo);
 
