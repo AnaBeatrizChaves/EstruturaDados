@@ -32,7 +32,6 @@ int main() {
     printf("\nMatricula: UC23100039");
     printf("\n-------------------------------------------");
     printf("\n---> RESPOSTA\n");
-    //Leitura dos vértices
     printf("- Vertices do Poligono:\n");
     printf("  X   |   Y\n");
     for (int i = 0; i < ponto; i++) {
