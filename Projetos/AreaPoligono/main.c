@@ -33,8 +33,9 @@ int main() {
     printf("\n---> RESPOSTA\n");
     //Leitura dos vértices
     printf("- Vertices do Poligono:\n");
+    printf("  X   |   Y\n");
     for (int i = 0; i < ponto; i++) {
-        printf("%.2f, %.2f\n", vertices[i].X, vertices[i].Y);
+        printf("%.2f    %.2f\n", vertices[i].X, vertices[i].Y);
     }
     printf("- Area do poligono = %.0f", area);
     printf("\n-------------------------------------------\n");
