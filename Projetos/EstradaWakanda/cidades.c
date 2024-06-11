@@ -7,7 +7,7 @@
 Estrada *getEstrada(const char *nomeArquivo) {
     Estrada *E = (Estrada *)malloc(sizeof(Estrada));
     if (E == NULL) {
-        printf("ERRO: Falha ao alocar memória para a Estrada!!\n");
+        printf("ERRO: Falha ao alocar memoria para a Estrada!!\n");
         exit(ERRO);
     }
 
@@ -22,7 +22,7 @@ Estrada *getEstrada(const char *nomeArquivo) {
 
     E->C = (Cidade *)malloc(E->N * sizeof(Cidade));
     if (E->C == NULL) {
-        printf("ERRO: Falha ao alocar memória para a Cidade!!\n");
+        printf("ERRO: Falha ao alocar memoria para a Cidade!!\n");
         fclose(arquivo);
         free(E);
         exit(ERRO);
