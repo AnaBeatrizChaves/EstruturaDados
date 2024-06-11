@@ -41,7 +41,6 @@ Estrada *getEstrada(const char *nomeArquivo) {
             }
         }
     }
-
     return E;
 }
 
@@ -71,7 +70,6 @@ double calcularMenorVizinhanca(const char *nomeArquivo) {
             MenorVizinhanca = vizinhanca[i];
         }
     }
-
     free(E->C);
     free(E);
     return MenorVizinhanca;
@@ -90,7 +88,6 @@ char *cidadeMenorVizinhanca(const char *nomeArquivo) {
             indiceMenorVizinhanca = i;
         }
     }
-
     char *nomeCidade = E->C[indiceMenorVizinhanca].Nome;
     free(E->C);
     free(E);
